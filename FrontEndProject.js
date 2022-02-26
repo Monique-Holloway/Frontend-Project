@@ -22,7 +22,7 @@ document.addEventListener("DOMcontentLoaded", function () {
 
 
 let cardContainer = document.getElementById('cardContainer');
-let flight_data = flight_data 
+let flying_to = flight_data 
 let rest_data = rest_data
     //results from flight search 
 
