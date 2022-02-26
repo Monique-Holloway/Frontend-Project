@@ -21,12 +21,32 @@
 }
 
 .staticPhoto {
-    display: block;
+    background-image: url(Images/StaticPhoto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form-container {
+    margin-bottom: -300px;
+    border-radius: 5px;
+    background-color: turquoise;
+    padding: 20px;
+}
+
+.form-container .form {
+    margin-bottom: -300px;
+    border-radius: 5px;
+    background-color: turquoise;
+    padding: 20px;
+}
+    /* display: block;
     margin: 0;
     max-width: 100%;
     max-height: 100%;
     background-position: 0%;
-}
+}  */
 
 .cardContainer {
     padding-left: 5%;
