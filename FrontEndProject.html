@@ -31,41 +31,28 @@
             </ul>
         </div>
       </nav>
-    <center>
-    <div class="form-container">
-        <img class="staticPhoto" src="Images/StaticPhoto.png" alt="Static Photo">
-    </center>
-      <div class="form">
-        <div class="title">Flights</div>
-        <form action="#">
-          <div class="user-details">
-            <div class="input-box">
-              <span class="details">From:</span>
-              <input type="text" placeholder="City, State" required>
-            </div>
-            <div class="input-box">
-              <span class="details">To:</span>
-              <input type="text" placeholder="City, State" required>
-            </div>
-            <div class="input-box">
-              <span class="details">Check In:</span>
-              <input type="text" placeholder="mm/dd/yyyy" required>
-            </div>
-            <div class="input-box">
-              <span class="details">Check Out:</span>
-              <input type="text" placeholder="mm/dd/yyyy" required>
-            </div>
-            <div class="input-box">
-              <span class="details">Passengers</span>
-              <input type="text" placeholder="Enter Amount" required>
-            </div>
-            <div class="button">
-              <input type="submit" value="Search">
-            </div>
+    <!--Flight Form -->
+      <div class="form-area">
+        <h3>Flights</h3>
+        <div class="booking-form">
+          <label>Flying From</label>
+          <input type="text" class="form-control" placeholder="City">
+          <label>Flying To</label>
+          <input type="text" class="form-control" placeholder="City">
+          <div class="input-grp">
+            <label>Departing</label>
+            <input type="date" class="form-control select-date">
           </div>
-        </form>
+          <div class="input-grp">
+            <label>Returning</label>
+            <input type="date" class="form-control select-date">
+          </div>
+          <div class="input-grp">
+            <button type="button" class="btn btn-primary flight">Take Me There</button>
+          </div>
+        </div>
       </div>
-    </div>
+    <center><img class="staticPhoto" src="Images/StaticPhoto.png" alt="Static Photo"></center>
 <div class=cardContainer>
     <div class="card" style="width: 18rem;">
         <img src="Images/FrontEndHeaderPic.PNG" class="card-img-top" alt="...">
