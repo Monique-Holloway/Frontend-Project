@@ -6,10 +6,10 @@ document.addEventListener("DOMcontentLoaded", function () {
             return `
         <div class=cardContainer>   
             <div class="card" style="width: 18rem;">
-            <img src="Images/FrontEndHeaderPic.PNG" class="card-img-top" alt="...">
+            <img src="${current.Restaurant.picture}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Title of Restaurant</h5>
-              <p class="card-text">Restaurant Reviews...</p>
+              <h5 class="card-title">${currentRestaurant.Title}</h5>
+              <p class="card-text">${currentRestaurant.Reviews}</p>
               <a href="#" class="btn btn-primary">Website</a>
             </div>
         </div>`
@@ -38,7 +38,7 @@ let rest_data = rest_data
             fetch(`https://api.yelp.com/v3GGs_dGvtT4SwQzpjI36UOpO81iXY6ODulTXvnKkJUlU0QFGU2-SeF7TrZgM4JuJH54aA8yrMTea90A-9dnsPZ6LtJLLTFY-0pM_Z-SF-WWCr29X3IKN3Kl21jTkRYnYx`)
                 .then((response) => response.json())
                 .then((flight_data) => {
-                console.log(flight_data);
+                    console.log(flight_data);
 
 
                  fetch('https://api.yelp.com/v3GGs_dGvtT4SwQzpjI36UOpO81iXY6ODulTXvnKkJUlU0QFGU2-SeF7TrZgM4JuJH54aA8yrMTea90A-9dnsPZ6LtJLLTFY-0pM_Z-SF-WWCr29X3IKN3Kl21jTkRYnYx')
@@ -47,6 +47,10 @@ let rest_data = rest_data
                         console.log(rest_data)
 
                         title.innerHTML = `info here`
+
+                        .catch(error => {
+                            console.error(error);
+                        });
                     });
                 });
             }); 

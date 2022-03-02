@@ -32,26 +32,31 @@
         </div>
       </nav>
     <!--Flight Form -->
-      <div class="form-area">
-        <h3>Flights</h3>
-        <div class="booking-form">
-          <label>Flying From</label>
-          <input type="text" class="form-control" placeholder="City">
-          <label>Flying To</label>
-          <input type="text" class="form-control" placeholder="City" id="flying-to">
-          <div class="input-grp">
-            <label>Departing</label>
-            <input type="date" class="form-control select-date">
+    <div class="flight-container">
+      <div class="title">Flights</div>
+      <form action="#">
+        <div class="user-details" id="flight-details">
+          <div class="input-box" id="flying-from">
+            <span class="details">Flying From</span>
+            <input type="text" placeholder="City">
           </div>
-          <div class="input-grp">
-            <label>Returning</label>
-            <input type="date" class="form-control select-date">
+          <div class="input-box" id="flying-to">
+            <span class="details">Flying To</span>
+            <input type="text" placeholder="City">
           </div>
-          <div class="input-grp">
-            <button type="button" class="btn btn-primary flight">Take Me There</button>
+          <div class="input-box" id="departing-date">
+            <span class="details">Departing</span>
+            <input type="date" class="input-box select-date">
           </div>
+          <div class="input-box" id="returning-date">
+            <span class="details">Returning</span>
+            <input type="date" class="input-box select-date">
+          </div>
+            <button type="button" class="flight-button">Take Me There</button>
         </div>
-      </div>
+      </form>
+    </div>
+  <!--Flight Form-->
     <center><img class="staticPhoto" src="Images/StaticPhoto.png" alt="Static Photo"></center>
 <div class=cardContainer id=cardContainer>
     <div class="card" style="width: 18rem;">
