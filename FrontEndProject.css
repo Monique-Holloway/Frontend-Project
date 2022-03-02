@@ -53,56 +53,100 @@
     background-color: black;
     border-color: black;
 }
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: url(Images/StaticPhoto.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
 /*Flight Form Styling*/
-.form-area{
-    position:absolute;
-    right: 55%;
-    top: 50%;
-    transform: translate(-45%,-45%);
-    max-width: 100%;
-    margin: auto;
-    height: 700px;
-    box-sizing: border-box;
-    background: rgba(113, 196, 187, 0.3);
-    padding: 40px;
+
+.flight-container{
+   max-width: 700px;
+   width: 100%;
+   background: rgba(113, 196, 187, 0.3);
+   padding: 25px 30px;
+   border-radius: 5px;
+
 }
-h3{
-    max-width: 600px;
-    margin: auto;
-    padding: 0 0 20px;
-    text-align: left;
-    font-weight: bold;   
+.flight-container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
 }
 
-.booking-form {
-    padding: 12 20px 20px;
+.flight-container .title::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background:rgba(113, 196, 187, 0.3)
+
 }
 
-.booking-form label{
+.flight-container .form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2- 20px);
+    
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
     margin-bottom: 5px;
-    margin-top: 10px;
-    font-size: 12px;
-    color: rgb(5, 5, 5);
+
 }
 
-input::placeholder{
-    color: rgb(5, 5, 5) !important;
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
 }
 
-.input-grp{
-    width: 151px;
-    display: inline-block;
-    padding-top: 20px;
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: rgba(113, 196, 187, 0.3);
+
 }
 
-.form-control{
-    font-size: 15px !important;
-    border-radius: 0 !important;
-    color: rgb(5, 5, 5) !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    padding-right: 20px;
+form .flight-button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: black;
+    border: none;
+    background: rgba(113, 196, 187, 0.3);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 0.5px;  
+}
 
+form .flight-button:hover{
+    background: rgba(0, 0, 0, 0.25);
+    color:rgb(5, 5, 5);
+    transition: 0.25s;
 }
 
 .select-date::-webkit-inner-spin-button,
@@ -115,59 +159,19 @@ input::placeholder{
     background: transparent;
 }
 
-.flight {
-    width: 100%;
-    padding: 6px 0 !important;
-    font-size: 15px !important;
-    font-weight: bold;
-    border: 1px solid rgb(5, 5, 5) !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    
+@media (max-width: 584px) {
+    .flight-container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .flight-container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
 }
-
-.flight:hover{
-    background: rgba(0, 0, 0, 0.25) !important;
-    color:rgb(5, 5, 5) !important;
-    transition: 0.25s;
-
-}
-/* .form-area{
-    position:absolute;
-    top: 45%;
-    right: 58%;
-    transform: translate(-50%,-50%);
-    width: 400px;
-    height: 500px;
-    box-sizing: border-box;
-    background: rgba(148, 224, 214, 0.25);
-    padding: 40px;
-}
-h3{
-    margin: 0;
-    padding: 0 0 20px;
-    font-weight: bold;   
-}
-.form-area p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;  
-}
-.form-area input{
-    margin-bottom: 20px;
-    width: 100%;
-}
-.form-area input[type=text]{
-    border: none;
-    border-bottom: 1px solid #0e0d0d;
-    background-color: transparent;
-    outline: none;
-    height: 40px;
-    color: #0e0d0d;
-    display: 16px;
-}
-::placeholder{
-    color: #0e0d0d
-
-} */
