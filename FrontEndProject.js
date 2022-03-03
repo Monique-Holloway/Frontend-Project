@@ -11,21 +11,22 @@ let cityArray = [
 
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM is loaded")
-    function renderRestaurant(restaurantArray) {
-        let restaurantHTML = restaurantArray.map((currentRestaurant) => {
+
+    function renderCityInfo(cityInfo) {
+        // let restaurantHTML = restaurantArray.map((currentRestaurant) => {
             return `
             <div class="restaurant-container" id="restaurant-container">
             <div class="card" style="width: 18rem;">
-            <div class="icon" id="restaurant-icon"><img src="https://media-cdn.tripadvisor.com/media/photo-f/09/58/d7/8e/${location_id}.jpg" class="card-img-top" alt="...">
+            <div class="icon" id="restaurant-icon"><img src="${cityInfo.photo}" class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title" id="card-title">${results.data[0].default_options[1].restaurant}</h5>
-            <p class="card-text">${results.category_counts.restaurants}</p>
-            <a href="#" class="btn btn-primary">Website</a>
-          </div>   
+                <h5 class="card-title" id="card-title">${cityInfo.name}</h5>
+                <p class="card-text">${cityInfo.description} The wonderful city of ${cityInfo.name} has ${cityInfo.numOfAccommodations} accommodations and ${cityInfo.numOfRestaurants} restaurants.</p>
+                <a href="${cityInfo.tripAdvisorUrl}" >${cityInfo.tripAdvisorUrl}</a>
+            </div>   
             `;
 
-        });
-        return restaurantHTML.join("");
+        // });
+        // return restaurantHTML.join("");
     }
 
     function renderWeather(weather) {
@@ -128,6 +129,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     })
                     .then((restaurantData) => {
                         console.log(restaurantData)
+
+                        let cityInfo = {
+                            name: city,
+                            numOfAccommodations: parseInt(restaurantData.results.category_counts.accommodations.total),
+                            numOfRestaurants: parseInt(restaurantData.results.category_counts.restaurants.total),
+                            description: restaurantData.results.description,
+                            photo: restaurantData.results.photo.images.large.url,
+                            tripAdvisorUrl: restaurantData.results.web_url
+                        }
+                        document.getElementById("restuarant-content").innerHTML = renderCityInfo(cityInfo);
+
                     })
                     .catch(err => {
                         console.error(err);
