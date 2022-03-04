@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             encodedBody.append("language", "en_US");
 
             let restaurantApi = "https://worldwide-restaurants.p.rapidapi.com/detail"
-            // let restaurantApiKey = "e775ba06cbmshc08d004a0749711p1baad4jsn6e29de6b725c"
+            let restaurantApiKey = "e775ba06cbmshc08d004a0749711p1baad4jsn6e29de6b725c"
             
                 fetch("https://worldwide-restaurants.p.rapidapi.com/typeahead", {
                     "method": "POST",
