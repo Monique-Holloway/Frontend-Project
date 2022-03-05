@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Probably an icon look up
             return `
                 <div class="weather-container" id="weather-container">
-                <div class="icon" id="weather-icon"><img src="http://openweathermap.org/img/wn/${weather.icon}@2x.png" style= 'height:10rem'/></div>
+                <div class="icon" id="weather-icon"><img src="https://openweathermap.org/img/wn/${weather.icon}@2x.png" style= 'height:10rem'/></div>
                 <div class="temp" id="weather-temp">${weather.temp.toFixed()} °F</div>
                 <div class="summary" id="weather-summary">${weather.summary}</div>
                 <div class="location" id="weather-location">${weather.location}</div>
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             encodedBody.append("language", "en_US");
 
             let restaurantApi = "https://worldwide-restaurants.p.rapidapi.com/detail"
-            let restaurantApiKey = "e775ba06cbmshc08d004a0749711p1baad4jsn6e29de6b725c"
+            let restaurantApiKey = "a8ba6850e8mshd99cd64681d94c5p17ba2cjsn8d41948074ff"
             
                 fetch("https://worldwide-restaurants.p.rapidapi.com/typeahead", {
                     "method": "POST",
