@@ -1,6 +1,10 @@
 .header {
-    font-family: "fantasy", copperplate;
+    /* font-family: "fantasy", copperplate; */
     margin-bottom: 50px;
     margin-top: 50px;
-    background-color: rgb(100, 235, 221);
+    background-color: rgba(113, 196, 187, 0.3);
+}
+
+.home {
+    color: black;
 }

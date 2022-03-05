@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // lat = cityObj.lat;
             // lon = cityObj.lon;
             
-            let weatherApi = `http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=dc079ec19c2fb7606fcd057f700ed7a1&q=${city}`;
+            let weatherApi = `https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=dc079ec19c2fb7606fcd057f700ed7a1&q=${city}`;
 
             fetch(weatherApi)
             .then((response) => response.json())

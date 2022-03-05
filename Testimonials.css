@@ -1,8 +1,8 @@
 .header {
-    font-family: "fantasy", copperplate;
+    /* font-family: "fantasy", copperplate; */
     margin-bottom: 50px;
     margin-top: 50px;
-    background-color: rgb(100, 235, 221);
+    background-color: rgba(113, 196, 187, 0.3);
 }
 
 .testContainer .card {
@@ -10,12 +10,31 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+    /* delete below if this doesn't make them more resposive */
+    float: left;
+    width: 25%;
+    /* padding: 0 10px; */
 }
 
 .testContainer {
-    display: flex;
-    flex-direction: row-reverse;
+    /* display: flex;
+    flex-direction: row-reverse; */
+     /* delete below if this doesn't make them more resposive */
+    margin: 0 -5px;
+    content: "";
+    display: table;
+    clear: both;
+
 }
+
+/* responsive columns...delete if it doens't make the responsive */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
 
 .testContainer .card .card-body .card-text {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -29,6 +48,10 @@
     font-family: "fantasy", copperplate;
     font-size: 25px;
     font-weight: 500;
+}
+
+.home {
+    color: black;
 }
 
 /* .testContainer .card .stars {

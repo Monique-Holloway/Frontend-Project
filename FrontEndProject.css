@@ -61,10 +61,11 @@ body{
     background-size: cover;
 }
 
+
 /*Flight Form Styling*/
 .flight-content{
-    position: absolute;
-    top: 100px;
+    position: absolute;  
+    top: 100px; 
     left: 25px;
     width: 500px;
     height: 300px;
@@ -77,9 +78,9 @@ body{
     height: 40vh;
     background: rgba(113, 196, 187, 0.3);
     padding: 25px 30px;
-    border-radius: 6px;
-
+    border-radius: 15px;
 }
+
 .flight-container .title{
     font-size: 25px;
     font-weight: 500;
@@ -93,7 +94,7 @@ body{
     bottom: 0;
     height: 3px;
     width: 30px;
-    background:rgba(113, 196, 187, 0.3)
+    background:rgba(113 196, 187, 0.3,)
 
 }
 
