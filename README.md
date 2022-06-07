@@ -1,6 +1,6 @@
 # Fly & Dine
 
-This project was a full stack project that required some work, as we worked in a group of 3.  The motivation behind this project was to create a responsive website that would allow users to select the location to where they are flying and be able to see recommended things to do, places to eat, & the current weather in that city.  We achieved this by using 2 APIs: Open Weather Map & Worlwide Restaurants.  
+This project was a front-end project that required some work, as we worked in a group of 3.  The motivation behind this project was to create a responsive website that would allow users to select the location to where they are flying and be able to see recommended things to do, places to eat, & the current weather in that city.  We achieved this by using 2 APIs: Open Weather Map & Worlwide Restaurants.  
 
 The languages & framworks used for this project include HTML5, CSS3, Bootstrap & JavaScript.
 
