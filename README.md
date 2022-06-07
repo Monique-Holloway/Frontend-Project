@@ -2,9 +2,9 @@
 
 This project was a full stack project that required some work, as we worked in a group of 3.  The motivation behind this project was to create a responsive website that would allow users to select the location to where they are flying and be able to see recommended things to do, places to eat, & the current weather in that city.  We achieved this by using 2 APIs: Open Weather Map & Worlwide Restaurants.  
 
-The languages & framworks used for this project include, HTML5, CSS3, Bootstrap & JavaScript.
+The languages & framworks used for this project include HTML5, CSS3, Bootstrap & JavaScript.
 
-Some challenges faced were having Git conflicts due to working in a group and pushing code at different times.  Also, we founnd it to be very challenging to get our travel API's card to populate in an area that is not covering another card.  This was tricky, as we had a limited amount of time to complete, as well as a limited number of API calls we could use.  Overall, the project functioned how we wanted, with a few areas that could be improved upon.
+Some challenges faced were having git conflicts due to working in a group and pushing code at different times.  Also, we found it to be very challenging to get our travel API's card to populate in an area that is not covering another card.  This was tricky, as we had a limited amount of time to complete, as well as a limited number of API calls we could use.  Overall, the project functioned how we wanted, with a few areas that could be improved upon.
 
 Contributors to this code include: Monique Holloway, Sarah Barnett, Taylor Hanson
 
